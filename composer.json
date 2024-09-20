@@ -1,0 +1,35 @@
+{
+    "name": "joaofabioma/php-kint-laravel",
+    "description": "Integracao do Kint com o Laravel",
+    "type": "library",
+    "homepage": "https://github.com/joaofabioma/php-kint-laravel",
+    "require": {
+        "kint-php/kint": "dev-master",
+        "php": ">=8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JoaoFabioMA\\PhpKintLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JoaoFabioMA\\PhpKintLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "JoaoFabioMA\\PhpKintLaravel\\PhpKintLaravelServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "JoaoFabioMA",
+            "email": "amarall.jf@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
